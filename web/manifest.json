@@ -1,11 +1,11 @@
 {
-    "name": "tokyo_flutter_hackathon",
-    "short_name": "tokyo_flutter_hackathon",
+    "name": "東京Flutterハッカソン",
+    "short_name": "TYOFlutterHack",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "9/30(土), 10/1(日)にFlutterハッカソンを東京で開催。ゆめみとFlutter大学のコラボ開催です！",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
