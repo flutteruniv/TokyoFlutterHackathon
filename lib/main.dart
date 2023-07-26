@@ -78,7 +78,7 @@ class AppTheme {
     textTheme: ThemeData().textTheme.copyWith(
           displayLarge: const TextStyle(
             fontFamily: Font.yesevaOne,
-            color: AppColor.yumemiBlue,
+            color: Colors.white,
             fontWeight: FontWeight.bold,
           ),
           displayMedium: const TextStyle(
@@ -101,7 +101,7 @@ class AppTheme {
           titleLarge: const TextStyle(
             fontFamily: Font.notoSansJP,
             fontWeight: FontWeight.bold,
-            color: AppColor.yumemiBlue,
+            color: Colors.white,
           ),
           titleMedium: const TextStyle(
             fontFamily: Font.notoSansJP,
