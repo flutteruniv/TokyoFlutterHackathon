@@ -16,7 +16,7 @@ class FooterWidget extends StatelessWidget {
     final isMobile = context.watch<LPModel>().isMobile;
 
     return Container(
-      color: AppColor.yumemiBlue,
+      color: Colors.white,
       padding: isMobile
           ? const EdgeInsets.symmetric(
               vertical: 24,
