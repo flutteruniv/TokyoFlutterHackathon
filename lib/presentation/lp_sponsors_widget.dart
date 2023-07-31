@@ -113,8 +113,7 @@ class SponsorsWidget extends StatelessWidget {
           ElevatedButton(
             style: ElevatedButton.styleFrom(),
             onPressed: () {
-              // FIXME: Googleフォームに修正
-              launchUrlString('https://twitter.com/TYOFlutterHack');
+              launchUrlString('https://forms.gle/zbdv5ACi4zEbMPiz7');
             },
             child: const Text('スポンサーをご希望の企業様はこちら'),
           ),
