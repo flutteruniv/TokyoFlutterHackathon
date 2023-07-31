@@ -33,11 +33,12 @@ class EntriesWidget extends StatelessWidget {
           ),
           SizedBox(height: isMobile ? 20 : 40),
           Text(
-            'Twitterをフォローして続報をお待ちください。',
+            '8/15(火)にエントリー開始です。\n1人参加でも即席チームが作れます。\nXをフォローして続報をお待ちください。',
             style: Theme.of(context).textTheme.titleMedium!.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.normal,
                 ),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 16),
           ElevatedButton(
@@ -47,7 +48,7 @@ class EntriesWidget extends StatelessWidget {
             onPressed: () {
               launchUrlString('https://twitter.com/TYOFlutterHack');
             },
-            child: const Text('Twitterをフォローする'),
+            child: const Text('Xをフォローする'),
           ),
           SizedBox(height: isMobile ? 20 : 40),
         ],
