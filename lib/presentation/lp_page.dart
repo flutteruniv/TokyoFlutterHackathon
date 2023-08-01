@@ -4,6 +4,7 @@ import 'package:responsive_builder/responsive_builder.dart';
 import 'package:tokyo_flutter_hackathon/config/app_color.dart';
 import 'package:tokyo_flutter_hackathon/presentation/lp_entiries_widget.dart';
 
+import 'lp_contents_widget.dart';
 import 'lp_footer_widget.dart';
 import 'lp_model.dart';
 import 'lp_outline_widget.dart';
@@ -55,6 +56,7 @@ class LPPage extends StatelessWidget {
                     TopWidget(),
                     OutlineWidget(),
                     TimelineWidget(),
+                    ContentsWidget(),
                     PrizeWidget(),
                     SponsorsWidget(),
                     EntriesWidget(),
