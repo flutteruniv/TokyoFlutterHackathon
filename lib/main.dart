@@ -30,6 +30,7 @@ class AppTheme {
   AppTheme._();
   static final data = ThemeData(
     fontFamily: Font.notoSansJP,
+    fontFamilyFallback: const [Font.notoColorEmoji],
     primaryColor: Colors.white,
     colorScheme: ThemeData().colorScheme.copyWith(
           primary: AppColor.primaryNavyColor,
@@ -109,6 +110,7 @@ class AppTheme {
           ),
           bodyLarge: const TextStyle(fontFamily: Font.notoSansJP),
           bodyMedium: const TextStyle(fontFamily: Font.notoSansJP),
+          bodySmall: const TextStyle(fontFamily: Font.notoSansJP),
           labelLarge: const TextStyle(
             fontFamily: Font.notoSansJP,
             fontWeight: FontWeight.bold,

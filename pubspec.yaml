@@ -43,3 +43,6 @@ flutter:
     - family: ZenAntiqueSoft
       fonts:
         - asset: resources/fonts/ZenAntiqueSoft-Regular.ttf
+    - family: NotoColorEmoji
+      fonts:
+        - asset: resources/fonts/NotoColorEmoji-Regular.ttf
