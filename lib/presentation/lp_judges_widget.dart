@@ -114,7 +114,7 @@ class JudgeItemWidget extends StatelessWidget {
           judgeType.name,
           style: Theme.of(context).textTheme.titleLarge!.copyWith(
                 color: Colors.white,
-                fontWeight: FontWeight.normal,
+                fontWeight: FontWeight.bold,
               ),
         ),
         Link(
