@@ -6,6 +6,7 @@ import 'package:tokyo_flutter_hackathon/presentation/lp_entiries_widget.dart';
 
 import 'lp_contents_widget.dart';
 import 'lp_footer_widget.dart';
+import 'lp_judges_widget.dart';
 import 'lp_model.dart';
 import 'lp_outline_widget.dart';
 import 'lp_prize_widget.dart';
@@ -57,6 +58,7 @@ class LPPage extends StatelessWidget {
                     OutlineWidget(),
                     TimelineWidget(),
                     ContentsWidget(),
+                    JudgesWidget(),
                     PrizeWidget(),
                     SponsorsWidget(),
                     EntriesWidget(),
