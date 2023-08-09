@@ -76,15 +76,17 @@ class SponsorsWidget extends StatelessWidget {
                   fontSize: isMobile ? 12 : 20,
                 ),
           ),
+          SizedBox(height: isMobile ? 8 : 16),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               InkWell(
                 onTap: () {
                   launchUrlString('https://magicpod.com/');
                 },
                 child: SizedBox(
-                  width: isMobile ? 250 : 500,
-                  child: Image.asset('resources/magicpod_vertical.png'),
+                  width: isMobile ? 120 : 240,
+                  child: Image.asset('resources/magicpod_color.png'),
                 ),
               ),
               InkWell(
@@ -92,8 +94,8 @@ class SponsorsWidget extends StatelessWidget {
                   launchUrlString('https://driglo.net/');
                 },
                 child: SizedBox(
-                  width: isMobile ? 65 : 130,
-                  child: Image.asset('resources/drigro_vertical.png'),
+                  width: isMobile ? 70 : 140,
+                  child: Image.asset('resources/driglo_vertical.png'),
                 ),
               ),
             ],
