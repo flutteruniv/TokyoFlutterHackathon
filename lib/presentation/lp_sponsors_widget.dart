@@ -78,7 +78,8 @@ class SponsorsWidget extends StatelessWidget {
           ),
           SizedBox(height: isMobile ? 8 : 16),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               InkWell(
                 onTap: () {
@@ -86,15 +87,20 @@ class SponsorsWidget extends StatelessWidget {
                 },
                 child: SizedBox(
                   width: isMobile ? 120 : 240,
+                  height: isMobile ? 120 : 240,
                   child: Image.asset('resources/magicpod_color.png'),
                 ),
+              ),
+              const SizedBox(
+                width: 40,
               ),
               InkWell(
                 onTap: () {
                   launchUrlString('https://driglo.net/');
                 },
                 child: SizedBox(
-                  width: isMobile ? 70 : 140,
+                  width: isMobile ? 90 : 180,
+                  height: isMobile ? 90 : 180,
                   child: Image.asset('resources/driglo_vertical.png'),
                 ),
               ),
