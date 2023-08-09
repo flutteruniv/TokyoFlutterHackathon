@@ -76,14 +76,28 @@ class SponsorsWidget extends StatelessWidget {
                   fontSize: isMobile ? 12 : 20,
                 ),
           ),
-          Text(
-            'Coming soon..',
-            style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                  color: Colors.white,
-                  fontWeight: FontWeight.normal,
+          Row(
+            children: [
+              InkWell(
+                onTap: () {
+                  launchUrlString('https://magicpod.com/');
+                },
+                child: SizedBox(
+                  width: isMobile ? 250 : 500,
+                  child: Image.asset('resources/magicpod_vertical.png'),
                 ),
+              ),
+              InkWell(
+                onTap: () {
+                  launchUrlString('https://driglo.net/');
+                },
+                child: SizedBox(
+                  width: isMobile ? 65 : 130,
+                  child: Image.asset('resources/drigro_vertical.png'),
+                ),
+              ),
+            ],
           ),
-          SizedBox(height: isMobile ? 20 : 40),
           SizedBox(height: isMobile ? 20 : 40),
           Text(
             '■シルバースポンサー',
@@ -93,12 +107,15 @@ class SponsorsWidget extends StatelessWidget {
                   fontSize: isMobile ? 12 : 20,
                 ),
           ),
-          Text(
-            'Coming soon..',
-            style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                  color: Colors.white,
-                  fontWeight: FontWeight.normal,
-                ),
+          SizedBox(height: isMobile ? 8 : 16),
+          InkWell(
+            onTap: () {
+              launchUrlString('https://lp.youtrust.jp/');
+            },
+            child: SizedBox(
+              width: isMobile ? 50 : 100,
+              child: Image.asset('resources/youtrust.png'),
+            ),
           ),
           SizedBox(height: isMobile ? 20 : 40),
           Text(
