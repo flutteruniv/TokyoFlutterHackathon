@@ -76,14 +76,36 @@ class SponsorsWidget extends StatelessWidget {
                   fontSize: isMobile ? 12 : 20,
                 ),
           ),
-          Text(
-            'Coming soon..',
-            style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                  color: Colors.white,
-                  fontWeight: FontWeight.normal,
+          SizedBox(height: isMobile ? 8 : 16),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              InkWell(
+                onTap: () {
+                  launchUrlString('https://magicpod.com/');
+                },
+                child: SizedBox(
+                  width: isMobile ? 120 : 240,
+                  height: isMobile ? 120 : 240,
+                  child: Image.asset('resources/magicpod_color.png'),
                 ),
+              ),
+              const SizedBox(
+                width: 40,
+              ),
+              InkWell(
+                onTap: () {
+                  launchUrlString('https://driglo.net/');
+                },
+                child: SizedBox(
+                  width: isMobile ? 90 : 180,
+                  height: isMobile ? 90 : 180,
+                  child: Image.asset('resources/driglo_vertical.png'),
+                ),
+              ),
+            ],
           ),
-          SizedBox(height: isMobile ? 20 : 40),
           SizedBox(height: isMobile ? 20 : 40),
           Text(
             '■シルバースポンサー',
@@ -93,16 +115,19 @@ class SponsorsWidget extends StatelessWidget {
                   fontSize: isMobile ? 12 : 20,
                 ),
           ),
-          Text(
-            'Coming soon..',
-            style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                  color: Colors.white,
-                  fontWeight: FontWeight.normal,
-                ),
+          SizedBox(height: isMobile ? 8 : 16),
+          InkWell(
+            onTap: () {
+              launchUrlString('https://lp.youtrust.jp/');
+            },
+            child: SizedBox(
+              width: isMobile ? 50 : 100,
+              child: Image.asset('resources/youtrust.png'),
+            ),
           ),
           SizedBox(height: isMobile ? 20 : 40),
           Text(
-            '東京Flutterハッカソンを一緒に盛り上げていただけるスポンサーをお待ちしております。\nスポンサーをご希望の方は下記ボタンからGoogleフォームに飛んでいただき、お問い合わせください。\n順次資料をお送りさせていただきます。',
+            '東京Flutterハッカソンを一緒に盛り上げていただけるスポンサー様を募集しております。\nスポンサーをご希望の方は下記ボタンからGoogleフォームに飛んでいただき、お問い合わせください。\nhello@flutteruniv.com より順次資料をお送りさせていただきます。',
             style: Theme.of(context).textTheme.titleMedium!.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.normal,
