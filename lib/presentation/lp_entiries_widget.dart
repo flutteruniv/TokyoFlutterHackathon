@@ -33,7 +33,7 @@ class EntriesWidget extends StatelessWidget {
           ),
           SizedBox(height: isMobile ? 20 : 40),
           Text(
-            '8/15(火)にエントリー開始です。\n1人参加でも即席チームが作れます。\nXをフォローして続報をお待ちください。',
+            '8/15(火)~8/31(木)エントリー受付中\nGoogleフォームの必要事項へのご記入をお願いいたします',
             style: Theme.of(context).textTheme.titleMedium!.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.normal,
@@ -43,12 +43,12 @@ class EntriesWidget extends StatelessWidget {
           const SizedBox(height: 16),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: AppColor.twitterBlue,
+              backgroundColor: AppColor.themeRed,
             ),
             onPressed: () {
-              launchUrlString('https://twitter.com/TYOFlutterHack');
+              launchUrlString('https://forms.gle/wHicy1zRNpyzV4tQ8');
             },
-            child: const Text('Xをフォローする'),
+            child: const Text('エントリーする'),
           ),
           SizedBox(height: isMobile ? 20 : 40),
         ],

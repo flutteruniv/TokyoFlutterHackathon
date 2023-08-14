@@ -29,13 +29,14 @@ class PrizeWidget extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
           ),
-          SizedBox(height: isMobile ? 20 : 40),
+          SizedBox(height: isMobile ? 10 : 20),
           Text(
-            'Coming soon..',
+            '🥇1位 30万円\n🥈2位 10万円\n🥉3位   5万円\n\n🎊特別賞\nSupabase賞\nその他特別賞あり',
             style: Theme.of(context).textTheme.titleMedium!.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.normal,
                 ),
+            textAlign: TextAlign.center,
           ),
         ],
       ),

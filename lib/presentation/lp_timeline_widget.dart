@@ -23,7 +23,7 @@ class TimelineWidget extends StatelessWidget {
                 ),
           ),
           Text(
-            'タイムライン(随時更新)',
+            'タイムライン',
             style: Theme.of(context).textTheme.titleLarge?.copyWith(
                   fontSize: isMobile ? 14 : 24,
                   fontWeight: FontWeight.bold,
