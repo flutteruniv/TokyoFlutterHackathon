@@ -86,6 +86,22 @@ class FooterWidget extends StatelessWidget {
                       onTap: () => launchUrlString('https://kboy.jp'),
                     ),
                     const SizedBox(
+                      height: 16,
+                    ),
+                    InkWell(
+                      child: Text(
+                        'お問い合わせはXへ',
+                        style:
+                            Theme.of(context).textTheme.titleMedium?.copyWith(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black,
+                                ),
+                      ),
+                      onTap: () =>
+                          launchUrlString('https://twitter.com/TYOFlutterHack'),
+                    ),
+                    const SizedBox(
                       height: 32,
                     ),
                     Text(
@@ -151,6 +167,25 @@ class FooterWidget extends StatelessWidget {
                                 ),
                       ),
                       onTap: () => launchUrlString('https://kboy.jp'),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.symmetric(horizontal: 16),
+                      width: 1,
+                      height: 24,
+                      color: AppColor.primaryNavyColor,
+                    ),
+                    InkWell(
+                      child: Text(
+                        'お問い合わせはXへ',
+                        style:
+                            Theme.of(context).textTheme.titleMedium?.copyWith(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black,
+                                ),
+                      ),
+                      onTap: () =>
+                          launchUrlString('https://twitter.com/TYOFlutterHack'),
                     ),
                     const Spacer(),
                     Text(

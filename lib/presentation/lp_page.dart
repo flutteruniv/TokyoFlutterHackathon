@@ -56,6 +56,7 @@ class LPPage extends StatelessWidget {
                   children: [
                     TopWidget(),
                     OutlineWidget(),
+                    EntriesWidget(),
                     TimelineWidget(),
                     ContentsWidget(),
                     JudgesWidget(),

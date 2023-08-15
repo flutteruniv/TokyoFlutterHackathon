@@ -116,14 +116,32 @@ class SponsorsWidget extends StatelessWidget {
                 ),
           ),
           SizedBox(height: isMobile ? 8 : 16),
-          InkWell(
-            onTap: () {
-              launchUrlString('https://lp.youtrust.jp/');
-            },
-            child: SizedBox(
-              width: isMobile ? 50 : 100,
-              child: Image.asset('resources/youtrust.png'),
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              InkWell(
+                onTap: () {
+                  launchUrlString('https://lp.youtrust.jp/');
+                },
+                child: SizedBox(
+                  width: isMobile ? 50 : 100,
+                  child: Image.asset('resources/youtrust.png'),
+                ),
+              ),
+              const SizedBox(
+                width: 20,
+              ),
+              InkWell(
+                onTap: () {
+                  launchUrlString('https://www.freebell.net/');
+                },
+                child: SizedBox(
+                  width: isMobile ? 50 : 100,
+                  child: Image.asset('resources/logo_freebell.png'),
+                ),
+              ),
+            ],
           ),
           SizedBox(height: isMobile ? 20 : 40),
           Text(

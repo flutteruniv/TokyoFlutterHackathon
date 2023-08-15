@@ -36,7 +36,7 @@ class AppTheme {
           primary: AppColor.primaryNavyColor,
           secondary: AppColor.primaryYellowColor,
         ),
-    scaffoldBackgroundColor: AppColor.primaryNavyColor,
+    scaffoldBackgroundColor: AppColor.backgroundBlack,
     cardTheme: const CardTheme(
       margin: EdgeInsets.zero,
     ),
