@@ -141,6 +141,18 @@ class SponsorsWidget extends StatelessWidget {
                   child: Image.asset('resources/logo_freebell.png'),
                 ),
               ),
+              const SizedBox(
+                width: 20,
+              ),
+              InkWell(
+                onTap: () {
+                  launchUrlString('https://www.harmo.biz/');
+                },
+                child: SizedBox(
+                  width: isMobile ? 50 : 100,
+                  child: Image.asset('resources/harmo.png'),
+                ),
+              ),
             ],
           ),
           SizedBox(height: isMobile ? 20 : 40),
