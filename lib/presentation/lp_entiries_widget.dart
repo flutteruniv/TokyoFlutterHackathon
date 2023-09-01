@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:url_launcher/url_launcher_string.dart';
 
 import '../../../config/app_color.dart';
 import 'lp_base_container.dart';
@@ -25,7 +24,7 @@ class EntriesWidget extends StatelessWidget {
                 ),
           ),
           Text(
-            '参加方法',
+            '参加チーム一覧',
             style: Theme.of(context).textTheme.titleLarge?.copyWith(
                   fontSize: isMobile ? 14 : 24,
                   fontWeight: FontWeight.bold,
@@ -33,23 +32,51 @@ class EntriesWidget extends StatelessWidget {
           ),
           SizedBox(height: isMobile ? 20 : 40),
           Text(
-            '8/15(火)~8/31(木)エントリー受付中\nGoogleフォームの必要事項へのご記入をお願いいたします',
+            '''Widget Wizards
+株式会社Pentagon
+THE NATUREs
+Flutter Forwards
+チームYUMEMI
+た〜さん☆てっく!
+TobuTakashimadairaLine
+シェアハウスの仲間たち
+チームパンパース
+非公開チーム
+Fukuoka Flutter Fanclub
+DOCODOOR
+hands
+Oprol
+非公開チーム
+ドリグロ
+俺ちゃんず
+OKINA
+Village
+1人参加15名(現地でチームを結成)
+            ''',
             style: Theme.of(context).textTheme.titleMedium!.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.normal,
                 ),
             textAlign: TextAlign.center,
           ),
-          const SizedBox(height: 16),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: AppColor.themeRed,
-            ),
-            onPressed: () {
-              launchUrlString('https://forms.gle/wHicy1zRNpyzV4tQ8');
-            },
-            child: const Text('エントリーする'),
-          ),
+          // Text(
+          //   '8/15(火)~8/31(木)エントリー受付中\nGoogleフォームの必要事項へのご記入をお願いいたします',
+          //   style: Theme.of(context).textTheme.titleMedium!.copyWith(
+          //         color: Colors.white,
+          //         fontWeight: FontWeight.normal,
+          //       ),
+          //   textAlign: TextAlign.center,
+          // ),
+          // const SizedBox(height: 16),
+          // ElevatedButton(
+          //   style: ElevatedButton.styleFrom(
+          //     backgroundColor: AppColor.themeRed,
+          //   ),
+          //   onPressed: () {
+          //     launchUrlString('https://forms.gle/wHicy1zRNpyzV4tQ8');
+          //   },
+          //   child: const Text('エントリーする'),
+          // ),
           SizedBox(height: isMobile ? 20 : 40),
         ],
       ),
