@@ -51,7 +51,8 @@ Oprol
 俺ちゃんず
 OKINA
 Village
-1人参加15名(現地でチームを結成)
+チーム大阪
+1人参加14名(現地でチームを結成)
             ''',
             style: Theme.of(context).textTheme.titleMedium!.copyWith(
                   color: Colors.white,
