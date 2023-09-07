@@ -153,6 +153,18 @@ class SponsorsWidget extends StatelessWidget {
                   child: Image.asset('resources/harmo.png'),
                 ),
               ),
+              const SizedBox(
+                width: 20,
+              ),
+              InkWell(
+                onTap: () {
+                  launchUrlString('https://ritsuan.com/');
+                },
+                child: SizedBox(
+                  width: isMobile ? 50 : 100,
+                  child: Image.asset('resources/ritsuan.png'),
+                ),
+              ),
             ],
           ),
           SizedBox(height: isMobile ? 20 : 40),
