@@ -62,7 +62,6 @@ class LPPage extends StatelessWidget {
                     JudgesWidget(),
                     SponsorsWidget(),
                     PrizeWidget(),
-                    EntriesWidget(),
                     FooterWidget(),
                   ],
                 ),

@@ -31,7 +31,7 @@ class PrizeWidget extends StatelessWidget {
           ),
           SizedBox(height: isMobile ? 10 : 20),
           Text(
-            '🥇1位 30万円\n🥈2位 10万円\n🥉3位   5万円\n\n🎊特別賞\nSupabase賞\nその他特別賞あり',
+            '🥇1位 30万円\n🥈2位 10万円\n🥉3位   5万円\n\n🎊特別賞(グッズ贈呈)\nSupabase賞\nゆめみ賞\nドリグロ賞\nMagicPod賞',
             style: Theme.of(context).textTheme.titleMedium!.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.normal,
